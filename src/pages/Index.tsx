@@ -25,7 +25,8 @@ const Index = () => {
         // Add .animate-fade-in when element enters viewport
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fade-in");
-          entry.target.style.opacity = "1";
+          // Use setAttribute for setting style properties on elements
+          entry.target.setAttribute("style", "opacity: 1");
           // Stop observing after animation is triggered
           observer.unobserve(entry.target);
         }

@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GitHub } from "lucide-react";
+import { Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Projects() {
@@ -73,7 +73,7 @@ export default function Projects() {
             <CardFooter>
               <Button variant="outline" size="sm" asChild>
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <GitHub size={16} />
+                  <Github size={16} />
                   <span>GitHub Repo</span>
                 </a>
               </Button>
